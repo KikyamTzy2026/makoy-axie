@@ -1,0 +1,39 @@
+*{box-sizing:border-box}body{margin:0;font-family:"Trebuchet MS",system-ui,sans-serif;background:#1b1233;color:#fff}
+button{font:inherit;cursor:pointer}.wrap{max-width:1000px;margin:0 auto;padding:12px}
+.panel{background:#2a1d4d;border:3px solid #5a43a0;border-radius:14px;padding:14px;margin:10px 0}
+.btn{background:linear-gradient(#ffd34d,#f5a000);border:3px solid #7a4b00;border-radius:12px;padding:10px 16px;font-weight:800;color:#3a2200}
+.btn.alt{background:linear-gradient(#7cd4ff,#2c8fe0);border-color:#0b3d7a;color:#04243f}
+.btn:disabled{filter:grayscale(1);opacity:.6;cursor:default}
+input{padding:10px;border-radius:10px;border:3px solid #5a43a0;background:#150d2b;color:#fff;font:inherit;max-width:100%}
+h1{text-align:center;font-size:2.4rem;margin:.3em;color:#ffd34d;text-shadow:0 3px #7a4b00}h3{margin:.3em 0}
+.flex{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.err{color:#ff8a8a;font-weight:700}.mut{opacity:.75;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.pick{background:#150d2b;border:3px solid #5a43a0;border-radius:12px;padding:4px;text-align:center;color:#fff}
+.pick.on{border-color:#ffd34d;background:#3a2a6b}.pick small{display:block;opacity:.8;font-size:11px}
+.arena{background:radial-gradient(ellipse at 50% 45%,#6cc477,#2f7a4a 60%,#1d4a38);border:4px solid #5a43a0;border-radius:18px;padding:8px;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.team{display:flex;flex-direction:column;align-items:center}
+.nm{background:#1b1233dd;padding:3px 16px;border-radius:20px;font-weight:800;border:2px solid #ffd34d}
+.row{display:flex;gap:10px;justify-content:center;margin-top:6px}
+.unit{width:108px;text-align:center;position:relative}.unit.out{filter:grayscale(1);opacity:.45}.ax{width:100%;display:block}
+.hp{height:16px;background:#500;border:2px solid #000;border-radius:8px;position:relative;overflow:hidden}
+.hp i{position:absolute;inset:0 auto 0 0;background:linear-gradient(#9f9,#2b2);transition:width .6s}
+.hp span{position:relative;font-size:11px;font-weight:700;line-height:12px;text-shadow:0 1px #000}
+.shd{background:#38f;border-radius:8px;font-size:12px;font-weight:700;padding:0 6px}.unit small{font-size:11px;display:block;text-shadow:0 1px #000}
+.fl{position:absolute;left:28%;top:10px;font-size:26px;font-weight:900;opacity:0;animation:fl 1s forwards;text-shadow:0 2px #000;z-index:3}
+.fl.dmg{color:#ff5a5a}.fl.sh{color:#7cf}.fl.heal{color:#8f8}
+@keyframes fl{0%{opacity:0;transform:translateY(10px)}20%{opacity:1}100%{opacity:0;transform:translateY(-44px)}}
+.go{animation-duration:.6s;animation-fill-mode:both}.top .go{animation-name:lt}.bot .go{animation-name:lb}
+@keyframes lt{50%{transform:translateY(45px) scale(1.15)}}@keyframes lb{50%{transform:translateY(-45px) scale(1.15)}}
+.hand{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:14px 0 6px;padding-top:10px}
+.card{width:104px;min-height:128px;border-radius:10px;border:3px solid #000;color:#222;position:relative;padding:20px 4px 4px;text-align:center;transition:transform .15s}
+.card.sel{transform:translateY(-12px);box-shadow:0 0 0 3px #ffd34d}.card.dis{opacity:.4}
+.card u{position:absolute;top:-9px;left:-9px;background:#ffd34d;border:2px solid #000;border-radius:50%;width:28px;height:28px;line-height:24px;font-weight:900;text-decoration:none}
+.card s{position:absolute;right:-8px;top:-9px;background:#f44;color:#fff;border-radius:50%;width:24px;height:24px;line-height:24px;text-decoration:none;font-weight:900}
+.card strong{display:block;font-size:13px}.card em{font-size:10px;display:block}.card p{margin:8px 0 0;font-weight:800;font-size:14px}
+.beast{background:#ffc66b}.aquatic{background:#7fe0ee}.plant{background:#b5e55a}.bird{background:#ffc1d6}.bug{background:#ff9a85}.reptile{background:#ddb8ee}
+.bar{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}.en{font-weight:900;color:#ffd34d;font-size:20px}
+.log{font-size:12px;max-height:100px;overflow:auto;opacity:.9;margin-top:8px}
+.ovl{position:absolute;inset:0;background:#000c;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;z-index:9}
+.ovl h2{font-size:3.2rem;margin:0;color:#ffd34d;text-shadow:0 4px #7a4b00}
+.code{font-size:28px;font-weight:900;letter-spacing:6px;color:#ffd34d}
+@media(max-width:560px){.unit{width:92px}.card{width:92px}}
